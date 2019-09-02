@@ -233,7 +233,7 @@ module jtag_logic(
 
 			B_TDI <= ioshifter[0];
 			bitcount <= bitcount - 1'b1;
-		end;
+		end
 			
 		if (state == bytes_clock_high_and_shift || state == bytes_keep_clock_high)
 			B_TCK <= 1'b1;

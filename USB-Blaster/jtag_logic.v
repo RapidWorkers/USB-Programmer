@@ -27,6 +27,14 @@ along with this program; if not, write to the Free Software Foundation, Inc.,
 -------------------------------------------------------------------------
 */
 
+/*
+2019-09-02 Note:
+	This code is NOT Verified which means 
+	THERE IS NO GUARANTEE THAT THIS CODE WILL PERFORM AS JTAG DOWNLOADER
+	So, I don't recommend this design till this note is deleted.
+*/
+
+
 module jtag_logic(
 	input CLK, 			// external 24/25 MHz oscillator
 	input nRXF,			// FT245BM nRXF
@@ -52,9 +60,9 @@ module jtag_logic(
 	reg [3:0]next_state;
 	
 ////////////////////////////////////////////////
-//														    //
-//					State Definition               //
-//															 //
+//                                            //
+//             State Definition               //
+//                                            //
 ////////////////////////////////////////////////
 	
 	/*
@@ -81,9 +89,9 @@ module jtag_logic(
 	
 	
 ////////////////////////////////////////////////
-//														    //
-//					State Calculation              //
-//															 //
+//                                            //
+//             State Calculation              //
+//                                            //
 ////////////////////////////////////////////////
 
 	always @(nRXF, nTXE, state, bitcount, ioshifter, do_output)
@@ -186,9 +194,9 @@ module jtag_logic(
 	end
 	
 ////////////////////////////////////////////////
-//														    //
-//    	        State to Output              //
-//															 //
+//                                            //
+//              State to Output               //
+//                                            //
 ////////////////////////////////////////////////
 	always @(posedge CLK)
 	begin

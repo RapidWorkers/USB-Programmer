@@ -19,7 +19,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 USE ieee.std_logic_unsigned.all;
 
-ENTITY jtag_logic IS
+ENTITY jtag_logic2 IS
 	PORT
 	(
 		CLK : IN STD_LOGIC;        -- external 24/25 MHz oscillator
@@ -37,9 +37,9 @@ ENTITY jtag_logic IS
 		WR : OUT STD_LOGIC;        -- FT245BM WR
 		D : INOUT STD_LOGIC_VECTOR(7 downto 0) -- FT245BM D[7..0]
 	);
-END jtag_logic;
+END jtag_logic2;
 
-ARCHITECTURE spec OF jtag_logic IS
+ARCHITECTURE spec OF jtag_logic2 IS
 
 	-- There are exactly 16 states. If this is encoded using 4 bits, there will
 	-- be no unknown/undefined state. The host will send us 64 times "0" to move

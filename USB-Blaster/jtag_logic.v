@@ -200,6 +200,7 @@ module jtag_logic(
 ////////////////////////////////////////////////
 	always @(posedge CLK)
 	begin
+			
 		if (state == set_nRD_low || state == keep_nRD_low || state == latch_data_from_host)
 			nRD <= 1'b0;
 		else

@@ -32,6 +32,9 @@ along with this program; if not, write to the Free Software Foundation, Inc.,
 	This code is NOT Verified which means 
 	THERE IS NO GUARANTEE THAT THIS CODE WILL PERFORM AS JTAG DOWNLOADER
 	So, I don't recommend this design till this note is deleted.
+
+2019-09-20 Note
+	Checked FT232 Working, but JTAG Side does not work...
 */
 
 

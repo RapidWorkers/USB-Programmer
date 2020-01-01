@@ -1,0 +1,5 @@
+﻿  uic EEPWriterPC.ui
+  EEPWriterPC.cpp
+  main.cpp
+  moc_EEPWriterPC.cpp
+  EEPWriterPC.vcxproj -> I:\Pirate\Desktop\GitHub\USB-Programmer\EEPWriter\PC Program\EEPWriterPC\x64\Debug\EEPWriterPC.exe
